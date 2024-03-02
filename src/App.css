@@ -1,0 +1,179 @@
+/* App.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: rgba(138, 43, 226, 0.8);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 45px;
+  border-radius: 15px;
+  position: fixed;
+  top: 10px;
+  width: 90%;
+  z-index: 1000;
+  margin: 0 auto;
+}
+
+.logo a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-list li {
+  margin-right: 20px;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-list a:hover {
+  color: #ffcc00;
+}
+
+/* Intro Section Styles */
+.intro-section {
+  position: relative;
+  background: url('./assets/background.jpg') center/cover no-repeat;
+  color: white;
+  padding: 220px 20px;
+  text-align: center;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.intro-section h1, .intro-section p {
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+/* Purple and White Section Styles */
+.purple-section,
+.white-section {
+  padding: 20px;
+}
+
+.purple-section {
+  background-color: #54198f;
+  color: white;
+  text-align: center;
+}
+
+.white-section {
+  background-color: white;
+  color: rgb(0, 0, 0);
+}
+
+.personalP {
+  max-width: 30%; /* Establecer el ancho máximo del párrafo */
+  overflow-x: hidden; /* Ocultar el desbordamiento horizontal */
+  white-space: normal; /* Permitir el ajuste automático de líneas */
+  text-align: center;
+  margin-left: 280px;
+  font-size: larger;
+}
+
+.white-section h2 {
+  position: relative;
+  color: #4c007d;
+  font-size: 36px; /* Reducir el tamaño de la fuente */
+  font-weight: 700;
+  line-height: 30px; /* Reducir el espacio entre líneas */
+  margin-bottom: 10px; /* Reducir el espacio inferior */
+}
+
+.white-section h2::after {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 4px;
+  background-image: linear-gradient(to right, #7f00b2, #9b4ed8, #f988ff);
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+}
+
+
+/* Member Card Styles */
+.member-card {
+  display: flex;
+  align-items: center;
+  background-color: #f4f4f4;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.member-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 15px 0 0 15px;
+  object-fit: cover;
+}
+
+.member-info {
+  flex: 1;
+  padding: 20px;
+}
+
+.member-info h3 {
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.member-info p {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.member-card:nth-child(2n) {
+  background-color: #fff;
+}
+
+/* Image Container Styles */
+.image-row {
+  display: flex;
+}
+
+.image-container {
+  display: flex;
+  align-items: center; /* Centra las imágenes horizontalmente */
+  max-width: 450px; /* Establece un ancho máximo para el contenedor de imágenes */
+  margin: 10px; /* Espaciado entre las imágenes */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  overflow: hidden;
+  margin-left: 500px;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease;
+}
+
+.image-container:hover img {
+  transform: scale(1.05);
+}
