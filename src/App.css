@@ -1,13 +1,11 @@
 /* App.css */
-
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Navbar Styles */
 .navbar {
   background-color: rgba(138, 43, 226, 0.8);
   color: white;
@@ -50,7 +48,6 @@ body {
   color: #ffcc00;
 }
 
-/* Intro Section Styles */
 .intro-section {
   position: relative;
   background: url('./assets/background.jpg') center/cover no-repeat;
@@ -61,16 +58,34 @@ body {
   z-index: 1;
 }
 
-.intro-section h1, .intro-section p {
-  margin-bottom: 20px;
-  position: relative;
-  z-index: 2;
+.intro-section h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
 }
 
-/* Purple and White Section Styles */
+.intro-section h1, .intro-section p {
+  margin-bottom: 20px;
+}
+
 .purple-section,
 .white-section {
   padding: 20px;
+}
+
+.white-section h2, .purple-section h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  padding: 20px;
+  color: #d8b6fc;
+}
+
+.member-info h3 {
+  font-size: 1.75rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 0.75rem;
 }
 
 .purple-section {
@@ -85,48 +100,54 @@ body {
 }
 
 .personalP {
-  max-width: 30%; /* Establecer el ancho máximo del párrafo */
-  overflow-x: hidden; /* Ocultar el desbordamiento horizontal */
-  white-space: normal; /* Permitir el ajuste automático de líneas */
-  text-align: center;
-  margin-left: 280px;
-  font-size: larger;
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: left;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin: 10px 0;
+  display: inline-block;
+  width: auto;
 }
 
 .white-section h2 {
+  margin-bottom: 30px;
   position: relative;
   color: #4c007d;
-  font-size: 36px; /* Reducir el tamaño de la fuente */
+  font-size: 36px;
   font-weight: 700;
-  line-height: 30px; /* Reducir el espacio entre líneas */
-  margin-bottom: 10px; /* Reducir el espacio inferior */
+  line-height: 30px;
 }
 
-.white-section h2::after {
-  content: '';
-  display: block;
-  width: 100px;
-  height: 4px;
-  background-image: linear-gradient(to right, #7f00b2, #9b4ed8, #f988ff);
-  position: absolute;
-  bottom: -10px;
-  left: 0;
+.word1 {
+  color: #7d28c8;
 }
 
+.word2 {
+  color: #572083;
+}
 
-/* Member Card Styles */
 .member-card {
   display: flex;
   align-items: center;
-  background-color: #f4f4f4;
+  background-color: #e9d6fe;
   border-radius: 15px;
   overflow: hidden;
   margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.member-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .member-img {
   width: 200px;
-  height: 200px;
+  height: 300px;
   border-radius: 15px 0 0 15px;
   object-fit: cover;
 }
@@ -138,32 +159,39 @@ body {
 
 .member-info h3 {
   color: #333;
-  font-size: 1.5rem;
-  margin-bottom: 10px;
+  font-size: 20px;
+  margin-bottom: 15px;
 }
 
 .member-info p {
   color: #666;
-  font-size: 1rem;
-  margin-bottom: 8px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 6;
+}
+
+.ver-mas {
+  color: #0056b3;
+  cursor: pointer;
+  padding: 5px 0;
+  font-weight: bold;
 }
 
 .member-card:nth-child(2n) {
   background-color: #fff;
 }
 
-/* Image Container Styles */
-.image-row {
-  display: flex;
-}
-
 .image-container {
   display: flex;
-  align-items: center; /* Centra las imágenes horizontalmente */
-  max-width: 450px; /* Establece un ancho máximo para el contenedor de imágenes */
-  margin: 10px; /* Espaciado entre las imágenes */
+  align-items: center;
+  max-width: 450px;
+  margin: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  border-radius: 15px;
+  border-radius: 8px;
   overflow: hidden;
   margin-left: 500px;
 }
@@ -171,9 +199,22 @@ body {
 .image-container img {
   width: 100%;
   height: auto;
-  transition: transform 0.5s ease;
 }
 
-.image-container:hover img {
-  transform: scale(1.05);
+.content-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.image-container, .personalP {
+  flex: 1;
+  margin: 10px;
+  max-width: 48%;
+}
+
+.white-section {
+  background-color: #ffffff;
+  color: #333333;
 }

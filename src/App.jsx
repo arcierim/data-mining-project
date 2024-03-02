@@ -1,5 +1,5 @@
 // App.jsx
-import React from "react";
+
 import "./App.css";
 import Mateo from "./assets/Mateo.jpg";
 import Daniel from "./assets/Daniel.png";
@@ -7,7 +7,6 @@ import Celien from "./assets/Celien.png";
 import Yassary from "./assets/yassary.jpg";
 import Camilo from "./assets/Camilo.jpg";
 import Grafico from "./assets/Grafica3.jpeg";
-import Graficos from "./assets/Graficos.jpeg";
 import Grafico2 from "./assets/Grafica2.jpeg";
 
 function App() {
@@ -42,29 +41,24 @@ function App() {
       </section>
       {/* Section 1: Group Members */}
       <section className="white-section" id="members">
-        <h2>Sobre Nosotros</h2>
+        <h2 className="white-section-title">
+          <span className="word1">Sobre</span>{" "}
+          <span className="word2">Nosotros</span>
+        </h2>
+
         <div className="member-card">
           <img className="member-img" src={Celien} alt="Member 1" />
           <div className="member-info">
             <h3>Celien Bonhomme</h3>
             <p></p>
             <p>
-              Saludos, mi nombre es Célien Bonhomme y me desempeño como
-              estudiante internacional francés. En Francia, tras completar el
-              bachillerato, nos embarcamos en dos años de clases preparatorias
-              intensivas, diseñadas como un trampolín para ingresar a las
-              prestigiosas escuelas de ingeniería. Este período es crucial, ya
-              que nos brinda una sólida formación en áreas fundamentales como
-              matemáticas, ciencias físicas e informática. Concluidas las
-              oposiciones, tuve el honor de ser admitido en Ensimag, reconocida
-              como una de las instituciones líderes en informática en Francia,
-              donde he dedicado tres años a especializarme en inteligencia
-              artificial. Durante este tiempo, realicé prácticas de seis meses
-              focalizadas en el procesamiento del lenguaje natural (PLN),
-              centrando mis estudios en proyectos de tipo RAG. Mi aspiración es
-              contribuir al campo de la ciencia de datos, con un enfoque
-              especial en la aplicación de estos conocimientos para la
-              protección y mejora del medio ambiente.
+              Soy Célien Bonhomme, estudiante internacional de Francia. Tras dos
+              años de preparatoria intensiva, ingresé a Ensimag, una institución
+              destacada en informática, donde me especialicé en inteligencia
+              artificial. Durante mi formación, completé una práctica de seis
+              meses en procesamiento del lenguaje natural, enfocándome en
+              proyectos RAG. Mi meta es aportar en ciencia de datos,
+              especialmente en aplicaciones que beneficien al medio ambiente.
             </p>
           </div>
         </div>
@@ -74,22 +68,18 @@ function App() {
             <h3>Daniel Mendoza Contreras</h3>
             <p></p>
             <p>
-              Saludos, mi nombre es Célien Bonhomme y me desempeño como
-              estudiante internacional francés. En Francia, tras completar el
-              bachillerato, nos embarcamos en dos años de clases preparatorias
-              intensivas, diseñadas como un trampolín para ingresar a las
-              prestigiosas escuelas de ingeniería. Este período es crucial, ya
-              que nos brinda una sólida formación en áreas fundamentales como
-              matemáticas, ciencias físicas e informática. Concluidas las
-              oposiciones, tuve el honor de ser admitido en Ensimag, reconocida
-              como una de las instituciones líderes en informática en Francia,
-              donde he dedicado tres años a especializarme en inteligencia
-              artificial. Durante este tiempo, realicé prácticas de seis meses
-              focalizadas en el procesamiento del lenguaje natural (PLN),
-              centrando mis estudios en proyectos de tipo RAG. Mi aspiración es
-              contribuir al campo de la ciencia de datos, con un enfoque
-              especial en la aplicación de estos conocimientos para la
-              protección y mejora del medio ambiente.
+              Como estudiante avanzado en Ingeniería de Sistemas, mi pasión
+              reside en el aprendizaje constante y la aplicación de soluciones
+              tecnológicas en el ámbito de la salud. Mi objetivo es utilizar mis
+              habilidades en programación para innovar en ingeniería biomédica,
+              un campo que considero tiene un potencial transformador. La
+              experiencia adquirida durante mi pasantía en Sophos Solutions ha
+              enriquecido mis capacidades de colaboración y comunicación,
+              aspectos esenciales para el éxito en proyectos
+              interdisciplinarios. Determinado a contribuir al avance
+              tecnológico con un impacto positivo en la sociedad, busco roles
+              donde pueda influir en el desarrollo de tecnologías que promuevan
+              el bienestar global.
             </p>
           </div>
         </div>
@@ -99,22 +89,14 @@ function App() {
             <h3>Yassary Garcia Potes</h3>
             <p></p>
             <p>
-              Saludos, mi nombre es Célien Bonhomme y me desempeño como
-              estudiante internacional francés. En Francia, tras completar el
-              bachillerato, nos embarcamos en dos años de clases preparatorias
-              intensivas, diseñadas como un trampolín para ingresar a las
-              prestigiosas escuelas de ingeniería. Este período es crucial, ya
-              que nos brinda una sólida formación en áreas fundamentales como
-              matemáticas, ciencias físicas e informática. Concluidas las
-              oposiciones, tuve el honor de ser admitido en Ensimag, reconocida
-              como una de las instituciones líderes en informática en Francia,
-              donde he dedicado tres años a especializarme en inteligencia
-              artificial. Durante este tiempo, realicé prácticas de seis meses
-              focalizadas en el procesamiento del lenguaje natural (PLN),
-              centrando mis estudios en proyectos de tipo RAG. Mi aspiración es
-              contribuir al campo de la ciencia de datos, con un enfoque
-              especial en la aplicación de estos conocimientos para la
-              protección y mejora del medio ambiente.
+              Originario de Barranquilla, actualmente curso Ingeniería de
+              Sistemas en la Universidad del Norte, con un enfoque particular en
+              las redes de computación y el diseño de software. Mi experiencia
+              se extiende a proyectos de diseño de aplicaciones móviles. Busco
+              expandir mis conocimientos en desarrollo backend, mejorar mi
+              dominio del inglés y adquirir fluidez en una tercera lengua, con
+              el objetivo de enriquecer mi perfil profesional y abrir nuevas
+              puertas en el ámbito tecnológico internacional.
             </p>
           </div>
         </div>
@@ -124,22 +106,16 @@ function App() {
             <h3>Mateo Arcieri</h3>
             <p></p>
             <p>
-              Saludos, mi nombre es Célien Bonhomme y me desempeño como
-              estudiante internacional francés. En Francia, tras completar el
-              bachillerato, nos embarcamos en dos años de clases preparatorias
-              intensivas, diseñadas como un trampolín para ingresar a las
-              prestigiosas escuelas de ingeniería. Este período es crucial, ya
-              que nos brinda una sólida formación en áreas fundamentales como
-              matemáticas, ciencias físicas e informática. Concluidas las
-              oposiciones, tuve el honor de ser admitido en Ensimag, reconocida
-              como una de las instituciones líderes en informática en Francia,
-              donde he dedicado tres años a especializarme en inteligencia
-              artificial. Durante este tiempo, realicé prácticas de seis meses
-              focalizadas en el procesamiento del lenguaje natural (PLN),
-              centrando mis estudios en proyectos de tipo RAG. Mi aspiración es
-              contribuir al campo de la ciencia de datos, con un enfoque
-              especial en la aplicación de estos conocimientos para la
-              protección y mejora del medio ambiente.
+              Soy Mateo Arcieri, un estudiante de 25 años de Ingeniería de
+              Sistemas en la Universidad del Norte, especializándome en
+              Desarrollo Web Frontend con React. A lo largo de mi carrera, he
+              completado varios proyectos que no solo han ampliado mi
+              conocimiento en esta área, sino que también han despertado mi
+              interés en el desarrollo backend con el objetivo de convertirme en
+              un desarrollador Full Stack. Aunque la ciberseguridad también me
+              atrae, mi enfoque actual es adquirir habilidades diversificadas
+              para descubrir mi verdadera pasión dentro del amplio espectro de
+              la tecnología.
             </p>
           </div>
         </div>
@@ -149,35 +125,28 @@ function App() {
             <h3>Camilo Andres Sagrado Rada</h3>
             <p></p>
             <p>
-              Saludos, mi nombre es Célien Bonhomme y me desempeño como
-              estudiante internacional francés. En Francia, tras completar el
-              bachillerato, nos embarcamos en dos años de clases preparatorias
-              intensivas, diseñadas como un trampolín para ingresar a las
-              prestigiosas escuelas de ingeniería. Este período es crucial, ya
-              que nos brinda una sólida formación en áreas fundamentales como
-              matemáticas, ciencias físicas e informática. Concluidas las
-              oposiciones, tuve el honor de ser admitido en Ensimag, reconocida
-              como una de las instituciones líderes en informática en Francia,
-              donde he dedicado tres años a especializarme en inteligencia
-              artificial. Durante este tiempo, realicé prácticas de seis meses
-              focalizadas en el procesamiento del lenguaje natural (PLN),
-              centrando mis estudios en proyectos de tipo RAG. Mi aspiración es
-              contribuir al campo de la ciencia de datos, con un enfoque
-              especial en la aplicación de estos conocimientos para la
-              protección y mejora del medio ambiente.
+              Estudiante en la Universidad del Norte, he desarrollado
+              habilidades clave en desarrollo Frontend, incluyendo React, CSS y
+              HTML, a través de mi participación en diversos proyectos. Poseo
+              experiencia en manejo de bases de datos y SQL, lo que refuerza mi
+              base técnica. Aspiro a impactar en la industria de las
+              telecomunicaciones, aprovechando mi formación para contribuir a la
+              innovación y mejorar la conectividad global. Mi enfoque está en
+              aplicar mis conocimientos en un sector en constante evolución,
+              buscando siempre aprender y enfrentar nuevos retos.
             </p>
           </div>
         </div>
       </section>
       {/* Section 2: Dataset Choice */}
       <section className="purple-section" id="dataset-choice">
-        <h2>Explorando el Dataset 'Hotel Booking Demand'</h2>
+        <h2>Explorando el Dataset &apos;Hotel Booking Demand&apos;</h2>
         <p>
-          Analizar el conjunto de datos "Hotel booking demand" en un proyecto de
-          minería de datos ofrece múltiples beneficios para la industria
-          hotelera, incluyendo la optimización de precios y ocupación mediante
-          la identificación de patrones en reservas y cancelaciones, la mejora
-          de la experiencia del cliente al entender sus preferencias y
+          Analizar el conjunto de datos &quot;Hotel booking demand&quot; en un
+          proyecto de minería de datos ofrece múltiples beneficios para la
+          industria hotelera, incluyendo la optimización de precios y ocupación
+          mediante la identificación de patrones en reservas y cancelaciones, la
+          mejora de la experiencia del cliente al entender sus preferencias y
           necesidades, la gestión eficaz de la demanda a través del
           reconocimiento de tendencias estacionales, el análisis detallado de
           segmentos de mercado para dirigir esfuerzos de marketing y ventas de
@@ -190,11 +159,14 @@ function App() {
         </p>
       </section>
       {/* Section 3: Charts Derived from the Dataset */}
-      <section className="white-section" id="charts">
-        <h2>Panorama General</h2>
+      <section className="white-section" id="charts1">
+        <h2 className="white-section-title">
+          <span className="word1">Panorama</span>{" "}
+          <span className="word2">General</span>
+        </h2>
 
-        <div className="image-row">
-        <p className="personalP">
+        <div className="content-row">
+          <p className="personalP">
             El gráfico de dispersión revela que reservas hechas con mayor
             anticipación generalmente corresponden a estancias más largas, y que
             las reservas de último minuto son más propensas a cancelarse. Esta
@@ -202,18 +174,21 @@ function App() {
             minimicen las cancelaciones.
           </p>
           <div className="image-container">
-            <img src={Grafico2} alt="Descripción de la imagen" />
+            <img
+              src={Grafico2}
+              alt="Gráfico de dispersión mostrando la relación entre anticipación de la reserva y duración de la estancia"
+            />
           </div>
-          
         </div>
       </section>
-      <section className="white-section" id="charts">
-        <div className="image-row">
-          {/* <div className="image-container">
-            <img src={Graficos} alt="Descripción de la imagen" />
-          </div> */}
+
+      <section className="white-section" id="charts2">
+        <div className="content-row">
           <div className="image-container">
-            <img src={Grafico} alt="Descripción de la imagen" />
+            <img
+              src={Grafico}
+              alt="Gráfico de líneas que muestra tendencias de reservas y cancelaciones"
+            />
           </div>
           <p className="personalP">
             El gráfico de líneas muestra que las reservas hechas con más
@@ -226,6 +201,7 @@ function App() {
           </p>
         </div>
       </section>
+
       {/* Section 4: Another Section (To Be Defined) */}
       <section className="purple-section" id="another-section">
         <h2>Hipótesis</h2>
